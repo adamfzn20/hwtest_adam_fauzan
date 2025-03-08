@@ -13,7 +13,7 @@ class MenuGridWidget extends StatelessWidget {
       crossAxisCount: 3,
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      childAspectRatio: 2,
+      childAspectRatio: 1.5,
       children: [
         MenuWidget(
           image: AppImages.icAtlasLogo,

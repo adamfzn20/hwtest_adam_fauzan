@@ -85,6 +85,23 @@ class TopChartsList extends StatelessWidget {
                 );
               },
             ),
+            const SizedBox(
+              height: 16,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Flexible(
+                  child: Image.asset(AppImages.icApplemusic.path,
+                      fit: BoxFit.contain),
+                ),
+                const SizedBox(width: 16),
+                Flexible(
+                  child: Image.asset(AppImages.icSpotify.path,
+                      fit: BoxFit.contain),
+                ),
+              ],
+            )
           ],
         );
       }),

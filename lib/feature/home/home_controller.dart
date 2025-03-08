@@ -4,7 +4,7 @@ import 'package:hwtest_adam_fauzan/data/remote/endpoint.dart';
 
 class HomeController extends GetxController {
   List<String> bannerImages = [];
-  int currentIndex = 0;
+  var currentIndex = 0.obs;
   var isLoading = true.obs;
 
   var topCharts = <Map<String, dynamic>>[].obs;
@@ -29,7 +29,7 @@ class HomeController extends GetxController {
   }
 
   void updateIndicator(int index) {
-    currentIndex = index;
+    currentIndex.value = index;
     update();
   }
 

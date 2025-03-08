@@ -75,6 +75,12 @@ class HomePage extends StatelessWidget {
                   const SizedBox(
                     height: 16,
                   ),
+                  const Divider(
+                    color: AppColors.gray900,
+                  ),
+                  const SizedBox(
+                    height: 16,
+                  ),
                   const TopChartsList(),
                 ],
               ),
